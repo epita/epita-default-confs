@@ -1,0 +1,12 @@
+set hostname "epita.fr"
+set username "firstname.lastname"
+set realname "Firstname Lastname"
+set signature ".signature"
+
+charset display utf8
+charset outgoing utf8
+
+set sorting_method 9
+set uncollapse_threads 1
+
+visible_headers  "From:,Subject:,Newsgroups:,Followup-To:,Reply-To:,Message-Id:,User-Agent:"

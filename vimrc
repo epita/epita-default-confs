@@ -22,3 +22,18 @@ runtime! plugin/sensible.vim
 
 set encoding=utf-8 fileencodings=
 syntax on
+
+set cc=80
+
+autocmd Filetype make setlocal noexpandtab
+
+set list listchars=tab:»·,trail:·
+
+
+" per .git vim configs
+" just `git config vim.settings "expandtab sw=4 sts=4"` in a git repository
+" change syntax settings for this repository
+let git_settings = system("git config --get vim.settings")
+if strlen(git_settings)
+	exe "set" git_settings
+endif

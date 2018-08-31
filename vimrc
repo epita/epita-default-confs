@@ -23,6 +23,7 @@ runtime! plugin/sensible.vim
 set encoding=utf-8 fileencodings=
 syntax on
 
+set number
 set cc=80
 
 autocmd Filetype make setlocal noexpandtab

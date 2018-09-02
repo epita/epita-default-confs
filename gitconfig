@@ -14,6 +14,9 @@
 	autosetuprebase = always
 [push]
 	default = simple
+[rebase]
+	autoSquash = true
+	autoStash = true
 [sendemail]
 	smtpencryption = tls
 	smtpserver = smtp.office365.com
